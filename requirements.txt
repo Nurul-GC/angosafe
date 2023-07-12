@@ -1,0 +1,13 @@
+WTForms
+Werkzeug
+Flask
+alembic
+SQLAlchemy
+flask_sqlalchemy
+flask_migrate
+flask_login
+flask_wtf
+email_validator
+marshmallow
+marshmallow_sqlalchemy
+gcrypter
