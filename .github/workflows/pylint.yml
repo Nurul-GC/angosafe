@@ -18,6 +18,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install pylint
+        pip install -r https://github.com/Nurul-GC/angosafe/blob/b52549d08fe7fa2939d01823cc7bd788ec6b324e/requirements.txt
     - name: Analysing the code with pylint
       run: |
         pylint $(git ls-files '*.py')
