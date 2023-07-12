@@ -114,7 +114,6 @@ xcuserdata/
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
 
-### Example user template template
 ### Example user template
 
 # IntelliJ project files
@@ -122,6 +121,11 @@ xcuserdata/
 *.iml
 out
 gen
+
+# misc files
+
+*.db
+
 ### Node template
 # Logs
 logs
