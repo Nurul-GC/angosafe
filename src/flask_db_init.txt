@@ -1,0 +1,14 @@
+# este arquivo contem as indicacoes para a auto-criacao da pasta
+# './migrations'
+# onde estarao as configuracoes gerais da db
+
+# abra o terminal e navegue ate a pasta atual
+# e defina primeiro a constante FLASK_APP='index.py'
+# para o projecto atual e em seguida execute o comando
+# `flask db init`
+
+# The `flask db migrate` command
+# does not make any changes to the database
+# it just generates the migration script.
+# To apply the changes to the database
+# the `flask db upgrade` command must be used.
