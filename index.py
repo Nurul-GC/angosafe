@@ -8,3 +8,7 @@ e digitar no terminal:
     C:/localizacao/do/script/> py index.py
 """
 
+from app import app
+
+if __name__ == '__main__':
+    app.run()
