@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,58 +16,54 @@
     <script src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 
-    <link rel="apple-touch-icon" sizes="180x180"
-        href="{{ url_for('static', filename='img/favicon/apple-touch-icon.png') }}">
-    <link rel="icon" sizes="32x32"
-        href="{{ url_for('static', filename='img/favicon/favicon-32x32.png') }}"
-        type="image/png">
-    <link rel="icon" sizes="16x16"
-        href="{{ url_for('static', filename='img/favicon/favicon-16x16.png') }}"
-        type="image/png">
-    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon/favicon.ico') }}"
-        type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='img/favicon/apple-touch-icon.png') }}">
+    <link rel="icon" sizes="32x32" href="{{ url_for('static', filename='img/favicon/favicon-32x32.png') }}" type="image/png">
+    <link rel="icon" sizes="16x16" href="{{ url_for('static', filename='img/favicon/favicon-16x16.png') }}" type="image/png">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon/favicon-16x16.ico') }}" type="image/x-icon">
     <link rel="manifest" href="{{ url_for('static', filename='img/favicon/site.webmanifest') }}">
 
-    <style>
-        body{
-          font-family; 'Abel', sans-serif;
-          overflow-wrap: break-word;
-          background-color: black;
-          color: green;
-        }
-    </style>
     <!-- here goes all head extra code from other pages -->
     {% block head %}{% endblock head %}
 </head>
-<body>
+
+<body >
     <header class="nb navbar navbar-light bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="{{ url_for('index') }}">
-            <img src="{{ url_for('static', filename='img/favicon/favicon-192x192.png') }}"
-                     alt="gcrypter-logo" class="brand-img">
-        </a>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{{ url_for('index') }}">
+                <img src="{{ url_for('static', filename='img/favicon/favicon-192x192.png') }}" alt="gcrypter-logo" class="brand-img">
+            </a>
 
-        <h1 class="nav-item" style="color:green;">GCrypter-API</h1>
+            <h1 class="nav-item" style="color:green;">AngoSafe-API</h1>
 
-        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div id="my-nav" class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="btn bg-dark text-light nav-link" href="{{ url_for('about') }}">About</a>
-                </li>
-            </ul>
+            <div id="my-nav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="btn bg-dark text-light nav-link" href="{{ url_for('home') }}">Pagina Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn bg-dark text-light nav-link" href="{{ url_for('encryption') }}">Encriptação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn bg-dark text-light nav-link" href="{{ url_for('decryption') }}">Decriptação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn bg-dark text-light nav-link" href="{{ url_for('about') }}">Sobre</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
     </header>
 
     <!-- here goes all body-content from other pages -->
     <div class="container">
-    {% block content %}{% endblock content %}
+        {% block content %}{% endblock content %}
     </div>
 
-    <footer class="ft bg-light">&copy; 2021 ArtesGC-DevSoft</footer>
+    <footer class="ft bg-light">&copy; 2023 3EMGC</footer>
 </body>
+
 </html>
