@@ -2,34 +2,54 @@
 
 {% block content %}
   <div class="card cd text-center">
-    <h1 class="card-header">Informations about the Project</h1>
+    <h1 class="card-header">Informações sobre o programa</h1>
     <div class="card-body">
       <div class="list-group list-group-flush">
         <div class="list-group-item list-group-item-dark lg">
-          Name: <b>GCrypter-API</b>
+          Nome:<hr>
+          <ul style="list-style-type: none;">
+            <li><b>AngoSafe-API</b></li>
+          </ul>
         </div>
         <br>
         <div class="list-group-item list-group-item-dark lg">
-          Version: <b>1.0-122021</b>
+          Versão:<hr>
+          <ul style="list-style-type: none;">
+            <li><b>0.2-072023</b></li>
+          </ul>
         </div>
         <br>
         <div class="list-group-item list-group-item-dark lg">
-          Programmer & Designer:
-          <b><a href="https://github.com/Nurul-GC">Nurul-GC</a></b>
+          Programador & Designer:<hr>
+          <ul style="list-style-type: none;">
+            <li><b><a href="https://github.com/Nurul-GC">Nurul-GC</a></b></li>
+            <li><b>Elson Ernesto</b></li>
+          </ul>
         </div>
         <br>
         <div class="list-group-item list-group-item-dark lg">
-          Trademark: <b>&trade;<a href="https://artesgc.home.blog">ArtesGC Inc</a></b>
+          Trademark:<hr>
+          <ul style="list-style-type: none;">
+            <li>
+              <b>&trade;3EMGC</b>
+            </li>
+          </ul>
         </div>
         <br>
         <div class="list-group-item list-group-item-dark lg">
-          <a href="https://github.com/ArtesGC/gcrypter-api">
-            <img src="https://github.com/Nurul-GC/Nurul-GC/raw/main/img/github-icon.svg"
-                 alt="github-icon" title="Repositorio da API no GitHub!"></a>
-          <img src="https://img.shields.io/github/license/ArtesGC/gcrypter-api"
-               alt="license-icon">
-          <img src="https://img.shields.io/github/release/ArtesGC/gcrypter-api"
-               alt="github-release-info">
+          Repositorio no Github:<hr>
+          <ul style="list-style-type: none;">
+            <li class="repo-list">
+              <a href="https://github.com/nurul-GC/angosafe">
+                <img src="https://github.com/Nurul-GC/Nurul-GC/raw/main/img/github-icon.svg"
+                    alt="github-icon" title="Repositorio da API no GitHub!"></a>
+              <img src="https://img.shields.io/github/license/Nurul-GC/angosafe"
+                  alt="license-icon">
+            </li>
+            <li class="repo-list">
+              <img class="qrcode" src="{{ url_for('static', filename='img/angosafe-qr.png') }}" alt="ango-safe-qr-code" height="150" width="150"/>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
