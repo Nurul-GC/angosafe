@@ -9,12 +9,25 @@
   margin-bottom: 50px;
 }
 
+.qrcode{
+  width: 200px;
+  height: 200px;
+  -webkit-transition: height .5s;
+  transition: height .5s;
+  -o-object-fit: cover;
+      object-fit: cover;
+}
+
+.qrcode:hover{
+  padding: 1px;
+}
+
 .brand-img {
   height: 50px;
   -webkit-transition: height .5s;
   transition: height .5s;
   -o-object-fit: cover;
-     object-fit: cover;
+      object-fit: cover;
 }
 
 .brand-img:hover{
@@ -30,7 +43,7 @@
   border-style: solid;
   border-color: black;
   background-color: gray;
-  box-shadow: 5px 5px 5px rgba(100, 100, 100);
+  box-shadow: 10px 10px 10px rgba(100, 100, 100);
 }
 .overview1:hover{
   width: 200px;
@@ -46,7 +59,7 @@
   border-style: solid;
   border-color: black;
   background-color: gray;
-  box-shadow: 5px 5px 5px rgba(100, 100, 100);
+  box-shadow: 10px 10px 10px rgba(100, 100, 100);
 }
 
 .overview2:hover{
@@ -63,7 +76,7 @@
   border-style: solid;
   border-color: black;
   background-color: gray;
-  box-shadow: 5px 5px 5px rgba(100, 100, 100);
+  box-shadow: 10px 10px 10px rgba(100, 100, 100);
 }
 
 .overview3:hover{
@@ -72,9 +85,10 @@
 }
 
 .endpoint{
+  text-align: center;
   background-color: #E5E5E5;
   padding: 5px;
-  border-radius: 3px;
+  border-radius: 5px;
   color: black;
 }
 
@@ -84,8 +98,8 @@
   color: gray;
   width: auto;
   margin-top: 10px;
-  border-radius: 3px;
-  box-shadow: 5px 5px 5px rgba(100, 100, 100);
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(100, 100, 100);
 }
 
 .ft{
@@ -93,15 +107,16 @@
   font-size: 8pt;
   padding: 5px;
   margin: auto;
+  background-color: rgb(130, 130, 130);
 }
 
 .cd{
   padding: 10px;
-  box-shadow: 5px 5px 5px rgba(100, 100, 100);
+  box-shadow: 10px 10px 10px rgba(100, 100, 100);
 }
 
 .container{
-  margin: 5px;
+  margin: 20px;
   border-radius: 5px;
   padding: 50px;
 }
@@ -110,17 +125,22 @@
   border-width: 1px;
   border-style: solid;
   border-color: black;
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 20px;
   margin-bottom: 10px;
-  box-shadow: 5px 5px 5px rgba(100, 100, 100);
+  box-shadow: 10px 10px 10px rgba(100, 100, 100);
 }
 
 .lg{
   color: green;
   background-color: #C6C8CA;
+  margin: 20px;
 }
 
 .tb{
-  margin-bottom: 10px;
+  margin: auto;
+}
+
+.repo-list{
+  padding: 10px;
 }
