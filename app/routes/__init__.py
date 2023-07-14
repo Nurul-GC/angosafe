@@ -7,11 +7,13 @@ from gcrypter import encrypt, decrypt
 
 @app.route("/", methods=['GET'])
 def index():
+    """pagina inicial"""
     return render_template("index.html")
 
 
 @app.route("/encryption/", methods=['GET', 'POST'])
 def encryption():
+    """pagina encriptacao"""
     if request.query_string:
         text = request.query_string.decode().split('=')[1]
         return jsonify(encrypted=encrypt(text=text))
@@ -23,6 +25,7 @@ def encryption():
 
 @app.route("/decryption/", methods=['GET', 'POST'])
 def decryption():
+    """pagina desencriptacao"""
     if request.query_string:
         if '&' in request.query_string.decode():
             values = request.query_string.decode().split('&')
@@ -39,9 +42,10 @@ def decryption():
         value1 = int(values['value1'])
         value2 = int(values['value2'])
         return jsonify(decrypted=decrypt(text_enc=(value1, value2)))
-    return render_template("encrypt.html")
+    return render_template("decrypt.html")
 
 
 @app.route("/about/", methods=['GET'])
 def about():
+    """pagina de infos sobre o programa"""
     return render_template("sobre.html")
