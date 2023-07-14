@@ -15,7 +15,11 @@
   -webkit-transition: height .5s;
   transition: height .5s;
   -o-object-fit: cover;
-      object-fit: cover;
+  object-fit: cover;
+  border-radius: 22px;
+  background-color: gray;
+  margin: 20px;
+  box-shadow: 10px 10px 10px rgba(100, 100, 100);
 }
 
 .qrcode:hover{
@@ -27,7 +31,7 @@
   -webkit-transition: height .5s;
   transition: height .5s;
   -o-object-fit: cover;
-      object-fit: cover;
+  object-fit: cover;
 }
 
 .brand-img:hover{
@@ -84,6 +88,12 @@
   height: 250px;
 }
 
+.menu-item{
+  margin-top: 5px;
+  margin-left: 500px;
+  margin-right: 500px;
+}
+
 .endpoint{
   text-align: center;
   background-color: #E5E5E5;
@@ -112,6 +122,8 @@
 .cd{
   padding: 10px;
   box-shadow: 10px 10px 10px rgba(100, 100, 100);
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .container{
