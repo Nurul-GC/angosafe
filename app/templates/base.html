@@ -30,10 +30,10 @@
     <header class="nb navbar navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="{{ url_for('index') }}">
-                <img src="{{ url_for('static', filename='img/favicon/favicon-192x192.png') }}" alt="gcrypter-logo" class="brand-img">
+                <img src="{{ url_for('static', filename='img/favicon/favicon-192x192.png') }}" alt="angosafe-logo" class="brand-img">
             </a>
 
-            <h1 class="nav-item" style="color:green;">AngoSafe-API</h1>
+            <h1 class="nav-item" style="color:#555;">AngoSafe-API</h1>
 
             <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse">
                 <span class="navbar-toggler-icon"></span>
@@ -42,7 +42,7 @@
             <div id="my-nav" class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="btn bg-dark text-light nav-link" href="{{ url_for('home') }}">Pagina Inicial</a>
+                        <a class="btn bg-dark text-light nav-link" href="{{ url_for('index') }}">Pagina Inicial</a>
                     </li>
                     <li class="nav-item">
                         <a class="btn bg-dark text-light nav-link" href="{{ url_for('encryption') }}">Encriptação</a>
