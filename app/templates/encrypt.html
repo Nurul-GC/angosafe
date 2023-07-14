@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div id="encrypt-card" class="cd card">
+    <h2 class="card-header text-center">Encrypting some text:</h2>
+    <div class="list-group list-group-flush">
+        <div class="list-group-item list-group-item-dark lg">
+            <b>URL:</b>
+            <code class="endpoint text-center">
+                /encryption/?text=[message_goes_here]
+            </code>
+            <pre class="json">
+// GET: /encryption/?text=amor
+
+{
+    "encrypted": [
+        1266033467,
+        706432073
+    ]
+}
+        </pre>
+        </div>
+        <br>
+        <div class="list-group-item list-group-item-dark lg">
+            <h3>Or just, fill the form bellow:</h3>
+            <form class="fm" method="post" action="{{ url_for('encryption') }}">
+                <div class="form-group">
+                    <label for="textEncrypt"><b>Text to Encrypt</b></label>
+                    <input type="text" class="form-control mb-2" id="textEncrypt" name="text" placeholder="Type anything you'd like to encrypt...">
+                    <button type="submit" class="btn bg-dark text-light mb-2">Encrypt</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
