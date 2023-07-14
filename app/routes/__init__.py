@@ -18,7 +18,7 @@ def encryption():
     elif request.method == 'POST':
         text = request.form.to_dict()['text']
         return jsonify(encrypted=encrypt(text=text))
-    return redirect(url_for('index'))
+    return render_template("encrypt.html")
 
 
 @app.route("/decryption/", methods=['GET', 'POST'])
@@ -39,7 +39,7 @@ def decryption():
         value1 = int(values['value1'])
         value2 = int(values['value2'])
         return jsonify(decrypted=decrypt(text_enc=(value1, value2)))
-    return redirect(url_for('index'))
+    return render_template("encrypt.html")
 
 
 @app.route("/about/", methods=['GET'])
