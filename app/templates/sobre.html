@@ -1,57 +1,61 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <div class="card cd text-center">
-    <h1 class="card-header">Informações sobre o programa</h1>
-    <div class="card-body">
-      <div class="list-group list-group-flush">
-        <div class="list-group-item list-group-item-dark lg">
-          Nome:<hr>
-          <ul style="list-style-type: none;">
-            <li><b>AngoSafe-API</b></li>
-          </ul>
-        </div>
-        <br>
-        <div class="list-group-item list-group-item-dark lg">
-          Versão:<hr>
-          <ul style="list-style-type: none;">
-            <li><b>0.2-072023</b></li>
-          </ul>
-        </div>
-        <br>
-        <div class="list-group-item list-group-item-dark lg">
-          Programador & Designer:<hr>
-          <ul style="list-style-type: none;">
-            <li><b><a href="https://github.com/Nurul-GC">Nurul-GC</a></b></li>
-            <li><b>Elson Ernesto</b></li>
-          </ul>
-        </div>
-        <br>
-        <div class="list-group-item list-group-item-dark lg">
-          Trademark:<hr>
-          <ul style="list-style-type: none;">
-            <li>
-              <b>&trade;3EMGC</b>
-            </li>
-          </ul>
-        </div>
-        <br>
-        <div class="list-group-item list-group-item-dark lg">
-          Repositorio no Github:<hr>
+<div class="card cd text-center">
+  <h1 class="card-header">Informações sobre o programa</h1>
+  <div class="card-body">
+    <div class="list-group list-group-flush">
+      <div class="list-group-item list-group-item-dark lg">
+        Nome:
+        <hr>
+        <ul style="list-style-type: none;">
+          <li><b>AngoSafe-API</b></li>
+        </ul>
+      </div>
+      <br>
+      <div class="list-group-item list-group-item-dark lg">
+        Versão:
+        <hr>
+        <ul style="list-style-type: none;">
+          <li><b>0.2-072023</b></li>
+        </ul>
+      </div>
+      <br>
+      <div class="list-group-item list-group-item-dark lg">
+        Programador & Designer:
+        <hr>
+        <ul style="list-style-type: none;">
+          <li><b><a href="https://github.com/Nurul-GC">Nurul-GC</a></b></li>
+          <li><b>Elson Ernesto</b></li>
+        </ul>
+      </div>
+      <br>
+      <div class="list-group-item list-group-item-dark lg">
+        Trademark:
+        <hr>
+        <ul style="list-style-type: none;">
+          <li>
+            <b>&trade;3EMGC</b>
+          </li>
+        </ul>
+      </div>
+      <br>
+      <div class="list-group-item list-group-item-dark lg">
+        Repositorio no Github:
+        <hr>
+        <a href="https://github.com/nurul-GC/angosafe">
           <ul style="list-style-type: none;">
             <li class="repo-list">
-              <a href="https://github.com/nurul-GC/angosafe">
-                <img src="{{ url_for('static', filename='img/github-icon.svg') }}"
-                    alt="github-icon" title="Repositorio da API no GitHub!"></a>
-              <img src="{{ url_for('static', filename='img/license-BSD3.svg') }}"
-                  alt="license-icon">
+              <img src="{{ url_for('static', filename='img/github-icon.svg') }}" alt="github-icon" title="Repositorio da API no GitHub!">
+              <img src="{{ url_for('static', filename='img/license-BSD3.svg') }}" alt="license-icon" title="Software licenciado sob a licença 'Impulsionando o Desenvolvimento de Software(Boost Software Development) - 3ª clausula' ">
             </li>
             <li class="repo-list">
-              <img class="qrcode" src="{{ url_for('static', filename='img/angosafe-qr.png') }}" alt="ango-safe-qr-code" height="150" width="150"/>
+              <img class="qrcode" src="{{ url_for('static', filename='img/angosafe-qr.png') }}" alt="ango-safe-qr-code" height="150" width="150" />
             </li>
           </ul>
-        </div>
+        </a>
       </div>
     </div>
   </div>
+</div>
 {% endblock content %}
