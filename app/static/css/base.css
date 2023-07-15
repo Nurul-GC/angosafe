@@ -90,8 +90,8 @@
 
 .menu-item{
   margin-top: 5px;
-  margin-left: 500px;
-  margin-right: 500px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .endpoint{
@@ -127,7 +127,6 @@
 }
 
 .container{
-  margin: 20px;
   border-radius: 5px;
   padding: 50px;
 }
