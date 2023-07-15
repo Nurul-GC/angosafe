@@ -1,21 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>gcrypter-api</title>
+    <title>angosafe-api</title>
 
+    <!--fonts links-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abel&display=swap">
 
+    <!--local css file-->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+
+    <!--bootstrap.min local files-->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
-    <script src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 
+    <!--jquery local file-->
+    <script src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+
+    <!--angular local files-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/angular-csp.css') }}">
+    <script src="{{ url_for('static', filename='js/angular.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/angular-animate.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/angular-aria.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/angular-cookies.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/angular-loader.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/angular-locale_pt-ao.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/angular-message-format.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/angular-messages.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/angular-parse-ext.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/angular-resource.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/angular-route.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/angular-sanitize.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/angular-touch.min.js') }}"></script>
+
+    <!--local icon files-->
     <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='img/favicon/apple-touch-icon.png') }}">
     <link rel="icon" sizes="32x32" href="{{ url_for('static', filename='img/favicon/favicon-32x32.png') }}" type="image/png">
     <link rel="icon" sizes="16x16" href="{{ url_for('static', filename='img/favicon/favicon-16x16.png') }}" type="image/png">
