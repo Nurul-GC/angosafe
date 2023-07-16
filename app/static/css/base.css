@@ -103,6 +103,7 @@
 }
 
 .json{
+  font-size: 8pt;
   background-color: white;
   padding: 5px;
   color: gray;
@@ -149,8 +150,4 @@
 
 .tb{
   margin: auto;
-}
-
-.repo-list{
-  padding: 10px;
 }
