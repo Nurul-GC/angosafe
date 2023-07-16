@@ -1,4 +1,5 @@
-![3emgc-logo](app/static/img/3emgc.png)
+![angosafe-logo](app/static/img/favicon/favicon-192x192.png)
+
 # angosafe [gcrypter-ext]
 
 ***Uma API navegável para o projecto de Segurança e Encriptação de Dados e foi criada com o intuito de promover a Segurança de Dados e uso das Tecnologias para resolver problemas do quotidiano no nosso País.***
