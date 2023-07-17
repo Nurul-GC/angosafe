@@ -1,4 +1,2 @@
-#! /usr/bin/bash
-cd './'
-export FLASK_APP='index.py'
-/usr/bin/python3 -m flask db migrate
+export FLASK_APP='../index.py'
+/usr/local/bin/python3 -m flask migrate
