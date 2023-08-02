@@ -15,5 +15,5 @@ class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or decrypt((3569661159, 3886674852)) or token_hex(32)
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'sqlite:///'+os.path.join(basedados_dir, 'angosafe.db')
     SQLALCHEMY_TRACK_MODIFICATIONS = True
-    DEBUG = False
-    RELOAD = False
+    DEBUG = True
+    RELOAD = True
