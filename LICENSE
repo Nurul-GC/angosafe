@@ -1,4 +1,35 @@
-BSD 3-Clause License
+**Licença "Impulsionando o Desenvolvimento de Software (3a Claúsula)**
+
+Direitos Autorais (c) 2023, 3MGC
+
+Redistribuição e uso em formas de origem e binária, com ou sem
+Modificação, são permitidos, desde que as seguintes condições sejam atendidas:
+
+1. Redistribuições do código -fonte devem manter o aviso de direitos autorais acima, este
+   Lista de condições e o seguinte aviso.
+
+2. Redistribuições em forma binária devem reproduzir o aviso de direitos autorais acima,
+   Esta lista de condições e o seguinte aviso na documentação
+   e/ou outros materiais fornecidos com a distribuição.
+
+3. Nem o nome do detentor dos direitos autorais nem os nomes de seus
+   os colaboradores podem ser usados para endossar ou promover produtos derivados de
+   Este software sem permissão prévia por escrito específica.
+
+Este software é fornecido pelos detentores de direitos autorais e colaboradores "como está"
+E quaisquer garantias expressas ou implícitas, incluindo, entre
+Garantias implícitas de comercialização e aptidão para um propósito específico são
+Isenado.Em nenhum caso o titular ou colaboradores de direitos autorais será responsável
+Para qualquer direto, indireto, incidental, especial, exemplar ou conseqüente
+Danos (incluindo, entre outros
+SERVIÇOS;Perda de uso, dados ou lucros;Ou interrupção de negócios) no entanto
+Causado e a qualquer teoria da responsabilidade, seja em contrato, responsabilidade estrita,
+Ou delito (incluindo negligência ou de outra forma) surgindo de alguma forma do uso
+Deste software, mesmo se recomendar a possibilidade de tais danos.
+
+--------------------------------------------------------
+
+**Boost Software Development 3-Clause License**
 
 Copyright (c) 2023, 3MGC
 
