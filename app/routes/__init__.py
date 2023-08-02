@@ -39,9 +39,21 @@ def decryption():
             return jsonify(decrypted=decrypt(text_enc=(value1, value2)))
     elif request.method == 'POST':
         values = request.form.to_dict()
-        value1 = int(values['value1'])
-        value2 = int(values['value2'])
-        return jsonify(decrypted=decrypt(text_enc=(value1, value2)))
+        if values['value1']!='' and values['value2']!='':
+            value1 = int(values['value1'])
+            value2 = int(values['value2'])
+            return jsonify(decrypted=decrypt(text_enc=(value1, value2))) 
+        else:
+            both_values = values['values'].split(',')
+            value1 = both_values[0]
+            value2 = both_values[1]
+            if '('in value1 and ')' in value2:
+                value1 = int(value1[1:])
+                value2 = int(value2[:-1])
+            else:
+                value1 = int(value1)
+                value2 = int(value2)
+            return jsonify(decrypted=decrypt(text_enc=(value1, value2))) 
     return render_template("decrypt.html")
 
 
