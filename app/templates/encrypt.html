@@ -30,7 +30,7 @@
             <form class="fm" method="post" action="{{ url_for('encryption') }}">
                 <div class="form-group">
                     <label for="textEncrypt"><b>Texto por encriptar</b></label>
-                    <input type="text" class="form-control mb-2" id="textEncrypt" name="text" placeholder="Digite aqui o que deseja encriptar...">
+                    <textarea rols="10" cols="50" class="form-control mb-2" id="textEncrypt" name="text" placeholder="Digite aqui o que deseja encriptar..."></textarea>
                     <button type="submit" class="btn bg-dark text-light mb-2">Encriptar</button>
                 </div>
             </form>
