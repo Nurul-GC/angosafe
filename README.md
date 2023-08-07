@@ -43,3 +43,7 @@ A sua importância reside maioritariamente em manter a privacidade e evitar aces
 ---
 
 © 2023 3MGC - [Licenciado sob a Licença "Impulsionando o Desenvolvimento de Software (3a Claúsula) | BSD 3-Clause"](LICENSE)
+
+---
+
+![angosafe-qrcode](app/static/img/herokuapp-qrcode.png)
