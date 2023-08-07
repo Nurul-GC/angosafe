@@ -14,4 +14,4 @@ app.config.from_object(Config)
 # iniciando a instancia da base dados
 # db = SQLAlchemy(app)
 
-from app import routes
+from app.routes import *
